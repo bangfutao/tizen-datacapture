@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<manifest xmlns="http://tizen.org/ns/packages" api-version="3.0" package="com.datacapture.watch.app" version="1.0.0">
+    <author email="bangfu.tao@samsung.com">Bangfu Tao</author>
+    <description>Tizen data capture tool for recording sensor samples </description>
+    <profile name="wearable"/>
+    <ui-application appid="com.datacapture.watch.app" exec="datacaptureapp" multiple="false" nodisplay="false" taskmanage="true" type="capp">
+        <label>Data Capture</label>
+        <icon>data-capture.png</icon>
+        <metadata key="http://tizen.org/metadata/background-category/sensor"/>
+        <metadata key="http://tizen.org/metadata/background-category/iot-communication"/>
+        <metadata key="http://tizen.org/metadata/background-category/media"/>
+    </ui-application>
+    <privileges>
+        <privilege>http://tizen.org/privilege/telephony</privilege>
+        <privilege>http://tizen.org/privilege/call</privilege>
+        <privilege>http://tizen.org/privilege/healthinfo</privilege>
+        <privilege>http://tizen.org/privilege/location</privilege>
+        <privilege>http://tizen.org/privilege/haptic</privilege>
+        <privilege>http://tizen.org/privilege/display</privilege>
+        <privilege>http://tizen.org/privilege/packagemanager.info</privilege>
+        <privilege>http://tizen.org/privilege/camera</privilege>
+        <privilege>http://tizen.org/privilege/externalstorage</privilege>
+        <privilege>http://tizen.org/privilege/content.write</privilege>
+        <privilege>http://tizen.org/privilege/mediastorage</privilege>
+        <privilege>http://tizen.org/privilege/network.get</privilege>
+        <privilege>http://tizen.org/privilege/appmanager.launch</privilege>
+        <privilege>http://tizen.org/privilege/internet</privilege>
+        <privilege>http://developer.samsung.com/tizen/privilege/accessoryprotocol</privilege>
+        <privilege>http://tizen.org/privilege/notification</privilege>
+    </privileges>
+</manifest>
